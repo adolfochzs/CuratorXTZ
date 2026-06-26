@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "run_timestamp": "2026-06-25T05:40:07.761396+00:00",
+    "source_shortlist": "output/shortlist_20260624_1426.json",
+    "stats": {
+      "shortlist_input": 18,
+      "processable": 16,
+      "analyzed": 0,
+      "ai_recommended": 0,
+      "human_approved": 0
+    }
+  },
+  "analyzed": []
+}

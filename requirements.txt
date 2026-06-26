@@ -1,0 +1,3 @@
+# Dependencies for A2A Interaction Example
+pytezos==3.13.0
+python-dotenv==1.0.0

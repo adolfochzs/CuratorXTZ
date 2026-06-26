@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "run_timestamp": "2026-06-25T05:56:33.391110+00:00",
+    "contract": "KT1MK8GBGMiWebmkcQ6uf5sh8UHPrj71qS7x",
+    "network": "rpc",
+    "agent": "tz1hHAz24KsPpSj5HyoUFX5vMkKjhEPtYXL8",
+    "stats": {
+      "total": 9,
+      "registered": 0,
+      "errors": 9
+    }
+  },
+  "registered": [],
+  "errors": [
+    {
+      "nft_ref": "KT1UhQxjnrXjtu97Qa55afitP4ncbBVEVzTz:183",
+      "name": "Celestial Snail - 00",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1Jmzm5BefFQdCcEKG2yxxRzyhqE9y5XfYY:95",
+      "name": "The Art of Endurance.",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1E2Xk5WDRZp8fzxZGuBTEQ1KZUBKgq1dup:18",
+      "name": "Beyond Silence",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1BE1KyN6GZEH5SFYR5T8TUEvRG9RCs2FdD:5",
+      "name": "She Stayed With Me",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT19muD7kSVPqhf195dNmLCghV997kQCqQnZ:1",
+      "name": "When Flowers Grow Teeth",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1FoTrsVjDTmLbxmLgGwd9u7xW8itdzYQ8h:145",
+      "name": "10000 things",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1WQszwZKWtSkmYhSEZxTVaEcmQukXsVCn3:437",
+      "name": "𝚆𝚊𝚟𝚎𝚏𝚘𝚛𝚖 𝙳𝚒𝚜𝚘𝚋𝚎𝚍𝚒𝚎𝚗𝚌𝚎",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1WQszwZKWtSkmYhSEZxTVaEcmQukXsVCn3:436",
+      "name": "Ｄａｔａｆａｌｌ",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    },
+    {
+      "nft_ref": "KT1KPYeHKasWKaScSm1k4VPxQy4cULSFqLgT:1",
+      "name": "C3N // WIREFRAME GLITCH ARCHIVES // NODE #1",
+      "error": "'ContractCall' object has no attribute 'autofill'"
+    }
+  ]
+}

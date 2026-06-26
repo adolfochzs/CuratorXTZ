@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "run_timestamp": "2026-06-24T20:20:32.444197+00:00",
+    "params": {
+      "days_back": 7,
+      "fetch_limit": 200,
+      "max_ai_calls": 30
+    },
+    "stats": {
+      "total_fetched": 58,
+      "pre_filter_passed": 58,
+      "ai_analyzed": 30,
+      "shortlist": 0,
+      "rejected": 0
+    }
+  },
+  "shortlist": []
+}
