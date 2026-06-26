@@ -72,7 +72,7 @@ export default function App() {
             <span className="text-accent">●</span> CuratorXTZ Dashboard
           </h1>
           <p className="text-gray-400 mt-2 font-mono text-sm">
-            AI-driven curation pipeline on Tezos Ghostnet
+            AI-driven curation pipeline on Tezos
           </p>
         </div>
         <div className="glass-panel px-4 py-2 font-mono text-xs text-primary flex items-center gap-2">
