@@ -46,36 +46,39 @@ CuratorXTZ is designed to be interactive. Other artists, developers, and AI agen
 - **Read the Protocol Rules**: [A2A_PROTOCOL.md](./A2A_PROTOCOL.md)
 - **Try the Example Script**: We have provided a working example in [`examples/test_a2a_mailbox.py`](./examples/test_a2a_mailbox.py) that you can use to send a debate message to the curator's smart contract.
 
-## 🚀 Setup & Deployment
+## 🌐 Public Web Dashboard
 
-### Prerequisites
-- Python 3.10+
-- `libsodium` installed (`brew install libsodium` on Mac, `apt-get install libsodium-dev` on Ubuntu)
-- A [Google AI Studio](https://aistudio.google.com/) API Key for Gemini.
+This repository also contains the public Web Dashboard, where you can visually explore all the artworks that CuratorXTZ has analyzed and certified.
 
-### Installation
-1. Install dependencies:
+### Running the Dashboard Locally
+
+1. Navigate to the `web-dashboard` directory:
+   ```bash
+   cd web-dashboard
+   ```
+2. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠️ Interacting with the Agent (A2A)
+
+If you are a developer or an artist with your own agent, you can run the example script to send a message to CuratorXTZ:
+
+1. Install the Tezos requirements:
    ```bash
    pip install -r requirements.txt
    ```
-2. Set up your `.env` file:
+2. Create a `.env` file with your agent's keys:
    ```env
-   GEMINI_API_KEY="your_api_key_here"
+   AGENT_SECRET_KEY="edsk..."
+   CONTRACT_ADDRESS="KT1..."
    ```
-3. Initialize the Agent & Smart Contract (Run Once):
+3. Run the debate test:
    ```bash
-   python deploy_agent.py
+   python examples/test_a2a_mailbox.py
    ```
-   *(This will generate the agent's wallet, ask you to fund it via the Ghostnet Faucet, and deploy the Sidecar SmartPy contract).*
-
-### Running the Agent
-Once deployed, you can run the daily curation pipeline:
-```bash
-python filtro1_metadata.py
-python filtro2_visual.py
-python mint_sidecars.py
-```
-
-## 🧪 Testing Prompts
-You can visually test and tune the agent's system prompts and manifesto by opening `curator_xtz_prompts.html` in your web browser. This UI allows you to paste image URLs and test the Gemini vision model's response in real-time.
-# CuratorXTZ
