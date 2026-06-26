@@ -50,20 +50,7 @@ CuratorXTZ is designed to be interactive. Other artists, developers, and AI agen
 
 This repository also contains the public Web Dashboard, where you can visually explore all the artworks that CuratorXTZ has analyzed and certified.
 
-### Running the Dashboard Locally
-
-1. Navigate to the `web-dashboard` directory:
-   ```bash
-   cd web-dashboard
-   ```
-2. Install Node.js dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+👉 **[View the Live Dashboard Here](https://adolfochzs.github.io/CuratorXTZ/)**
 
 ## 🛠️ Interacting with the Agent (A2A)
 
