@@ -10,19 +10,17 @@ export default function App() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const resAnalyzed = await fetch('/data/analyzed_20260624_2350.json');
-        const dataAnalyzed = await resAnalyzed.json();
-        
-        const resOnchain = await fetch('/data/onchain_20260625_0000.json');
+        const resOnchain = await fetch('./data/onchain_20260627_1356.json');
+        if (!resOnchain.ok) throw new Error(`HTTP ${resOnchain.status}: onchain file not found`);
         const dataOnchain = await resOnchain.json();
+        const registered = dataOnchain.registered || [];
 
         // Fetch A2A Debates from TzKT API (Mainnet)
         const contract = "KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5";
-        let debatesData = [];
+        let debatesData: any[] = [];
         try {
           const tzktRes = await fetch(`https://api.tzkt.io/v1/operations/transactions?target=${contract}&entrypoint=submit_message&status=applied&limit=20&sort.desc=id`);
           const ops = await tzktRes.json();
-          
           debatesData = ops.map((op: any) => {
             const params = op.parameter?.value || {};
             let payloadDecoded = {};
@@ -52,8 +50,8 @@ export default function App() {
           console.error("Error fetching TzKT data", err);
         }
 
-        setAnalyzed(dataAnalyzed.analyzed || []);
-        setOnchain(dataOnchain.registered || []);
+        setAnalyzed(registered);
+        setOnchain(registered);
         setDebates(debatesData);
       } catch (err) {
         console.error("Error loading data", err);
@@ -69,10 +67,10 @@ export default function App() {
       <header className="mb-12 border-b border-white/10 pb-6 flex items-center justify-between">
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-white flex items-center gap-3">
-            <span className="text-accent">●</span> CuratorXTZ Dashboard
+            <span className="text-accent">●</span> CuratorXTZ — Onchain
           </h1>
           <p className="text-gray-400 mt-2 font-mono text-sm">
-            AI-driven curation pipeline on Tezos
+            Primera selección curatorial · 7 piezas · Mainnet · 27 Jun 2026
           </p>
         </div>
         <div className="glass-panel px-4 py-2 font-mono text-xs text-primary flex items-center gap-2">
@@ -87,17 +85,23 @@ export default function App() {
         </div>
       ) : (
         <main className="space-y-16">
+          {/* 01 — Cards */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <span className="text-primary font-mono text-sm">01.</span> Neural Analysis
+              <span className="text-primary font-mono text-sm">01.</span> On-Chain Registry
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {analyzed.map((item, idx) => (
-                <Card key={idx} data={item} />
-              ))}
-            </div>
+            {analyzed.length === 0 ? (
+              <p className="text-gray-500 font-mono text-sm italic">No hay piezas cargadas.</p>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {analyzed.map((item, idx) => (
+                  <Card key={idx} data={item} />
+                ))}
+              </div>
+            )}
           </section>
 
+          {/* 02 — On-Chain Registry */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-accent font-mono text-sm">02.</span> On-Chain Registry
@@ -112,37 +116,28 @@ export default function App() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
-                  {onchain.map((record, idx) => {
-                    let actualHash = record.op_hash;
-                    if (actualHash && actualHash.includes('Hash\n')) {
-                      const parts = actualHash.split('Hash\n');
-                      if (parts.length > 1) {
-                        actualHash = parts[1].split('\n')[0].trim();
-                      }
-                    }
-                    
-                    return (
+                  {onchain.map((record, idx) => (
                     <tr key={idx} className="hover:bg-white/5 transition-colors">
                       <td className="py-3 text-primary">{record.nft_ref}</td>
-                      <td className="py-3">{record.score}/10</td>
+                      <td className="py-3">{record.f2_score}/10</td>
                       <td className="py-3">
-                        <a 
-                          href={`https://shadownet.tzkt.io/${actualHash}`}
+                        <a
+                          href={`https://mainnet.tzkt.io/${record.op_hash}`}
                           target="_blank"
                           rel="noreferrer"
                           className="text-gray-300 hover:text-white underline decoration-white/20 underline-offset-4"
                         >
-                          {actualHash?.substring(0, 16)}...
+                          {record.op_hash?.substring(0, 16)}...
                         </a>
                       </td>
                     </tr>
-                    );
-                  })}
+                  ))}
                 </tbody>
               </table>
             </div>
           </section>
 
+          {/* 03 — A2A Debates */}
           <section>
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-accent font-mono text-sm">03.</span> Live A2A Debates
@@ -163,13 +158,11 @@ export default function App() {
                         {new Date(d.timestamp).toLocaleDateString()} ↗
                       </a>
                     </div>
-                    
                     {d.payload?.argumento && (
                       <div className="bg-black/40 p-4 rounded text-sm italic text-gray-300 border-l border-white/10">
                         "{d.payload.argumento}"
                       </div>
                     )}
-                    
                     <div className="text-xs font-mono text-gray-500 mt-2 flex justify-between">
                       <span>Sender: {d.sender?.substring(0,8)}...</span>
                       <span>Target: {d.subject?.split(':')[0]?.substring(0,8)}...</span>
