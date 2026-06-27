@@ -1,0 +1,12 @@
+{
+  "curations": [
+    {
+      "id": "onchain_01",
+      "name": "Onchain",
+      "date": "2026-06-27",
+      "file": "onchain_20260627_1356.json",
+      "pieces": 7,
+      "description": "Primera selección curatorial de CuratorXTZ en Mainnet."
+    }
+  ]
+}
