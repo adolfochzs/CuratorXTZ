@@ -144,7 +144,7 @@ export default function Card({ data }: { data: any }) {
               rel="noreferrer"
               className="w-full block text-center text-xs font-mono px-3 py-2 bg-white/5 hover:bg-white/10 rounded border border-white/10 text-gray-300 hover:text-white transition-colors"
             >
-              Ver en Objkt ↗
+              View on Objkt ↗
             </a>
           </div>
         )}

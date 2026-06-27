@@ -100,7 +100,7 @@ export default function App() {
             <span className="text-accent">●</span> CuratorXTZ
           </h1>
           <p className="text-gray-400 mt-2 font-mono text-sm">
-            {totalPieces} piezas curadas · {curations.length} colección{curations.length !== 1 ? 'es' : ''} · Mainnet
+            {totalPieces} curated pieces · {curations.length} collection{curations.length !== 1 ? 's' : ''} · Mainnet
           </p>
         </div>
         <div className="glass-panel px-4 py-2 font-mono text-xs text-primary flex items-center gap-2">
@@ -128,12 +128,12 @@ export default function App() {
                     {curation.meta.name}
                   </h2>
                   <p className="text-gray-500 font-mono text-xs mt-1">
-                    {curation.meta.description} · {curation.pieces.length} piezas · {curation.meta.date}
+                    {curation.meta.description} · {curation.pieces.length} pieces · {curation.meta.date}
                   </p>
                 </div>
               </div>
               {curation.pieces.length === 0 ? (
-                <p className="text-gray-500 font-mono text-sm italic">No hay piezas en esta colección.</p>
+                <p className="text-gray-500 font-mono text-sm italic">No pieces in this collection.</p>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {curation.pieces.map((item, idx) => (
