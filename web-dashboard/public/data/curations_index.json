@@ -9,12 +9,12 @@
       "description": "First curatorial selection by CuratorXTZ on Mainnet."
     },
     {
-      "id": "curation_02",
-      "name": "Gemini Curation 01",
+      "id": "onchain_02",
+      "name": "Onchain",
       "date": "2026-07-14",
       "file": "onchain_20260714_1814.json",
       "pieces": 3,
-      "description": "Primera curaduría de prueba realizada de punta a punta utilizando la API de Google Gemini en CuratorXTZ."
+      "description": "Second curatorial selection by CuratorXTZ on Mainnet."
     }
   ]
 }
