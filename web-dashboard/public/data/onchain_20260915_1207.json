@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "run_timestamp": "2026-09-15T18:07:18.101411+00:00",
+    "contract": "KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5",
+    "network": "mainnet",
+    "agent": "tz1hHAz24KsPpSj5HyoUFX5vMkKjhEPtYXL8",
+    "stats": {
+      "total": 1,
+      "registered": 1,
+      "errors": 0
+    }
+  },
+  "registered": [
+    {
+      "token_id": "21",
+      "name": "Fictersnt",
+      "creator": "hmm.labs",
+      "contract": "KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5",
+      "platform": "EXCON",
+      "display_uri": "ipfs://bafybeig63xyatjcepj35y3br2c5dvtdzt2j74kk2skrqchvbrrlsjgsy4q",
+      "mime": "image/gif",
+      "timestamp": "2026-09-15T17:25:28+00:00",
+      "tags": "tezos, gif, objkt, art, glitch",
+      "features": "__availability_: primary",
+      "description": "Emerging like a fading transmission, where every distortion becomes an echo of memory and identity. The dense glitch textures transform silence into visual noise, reflecting the tension between human connection and isolation in an increasingly fragmented digital landscape.",
+      "pass": true,
+      "category": "Glitch Art & Databending",
+      "reason": "The work demonstrates a clear conceptual intention by using glitch aesthetics to explore themes of digital fragmentation and human isolation. It moves beyond superficial filtering by framing the distortion as a narrative device for memory and identity.",
+      "confidence": 0.9,
+      "f2_score": 8,
+      "f2_category": "Glitch Art & Databending",
+      "f2_verdict": "A compelling study in digital decay, where structural signal degradation successfully articulates the fragility of human presence within noisy data streams.",
+      "f2_reasoning": "The artwork utilizes high-contrast edge manipulation and chromatic channel separation to construct a ghostly human silhouette emerging from dense digital artifacts. The deliberate corruption of the visual signal creates a striking tension between figure and ground, effectively reinforcing the thematic exploration of isolation and memory transmission. The systematic degradation feels integral to the composition rather than an applied filter.",
+      "f2_recommend_sidecar": true,
+      "human_approved": true,
+      "approved_at": "2026-09-15T18:02:07.729891+00:00",
+      "nft_ref": "KT1U2kNakV9v8RYY7yBouwMzMHFWhiwQVKy8:21",
+      "op_hash": "ooELKAsh1nVV8S7PgFNrs5uXAE61SecPFjBfvdGuckcm7yDpZUu",
+      "onchain_at": "2026-09-15T18:07:18.101336+00:00",
+      "network": "mainnet",
+      "display_uri_local": "./data/images/8d2dfdc156db.jpg"
+    }
+  ],
+  "errors": []
+}

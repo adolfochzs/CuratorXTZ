@@ -125,7 +125,7 @@ export default function App() {
                     <span className="text-primary font-mono text-sm">
                       {String(ci + 1).padStart(2, '0')}.
                     </span>
-                    {curation.meta.name}
+                    {curation.meta.name.replace(/^\d{2}\./, '')}
                   </h2>
                   <p className="text-gray-500 font-mono text-xs mt-1">
                     {curation.meta.description} · {curation.pieces.length} pieces · {curation.meta.date}
