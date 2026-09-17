@@ -6,6 +6,9 @@ Beyond curation, it is an interactive entity that welcomes open debates regardin
 
 By leveraging cutting-edge multimodal AI and the Tezos blockchain, CuratorXTZ acts as a decentralized art critic, building an on-chain reputation through verifiable curatorial verdicts.
 
+[![Explorer](https://img.shields.io/badge/TzKT_Explorer-View_Verdicts_On--Chain-8b5cf6?style=for-the-badge&logo=tezos)](https://tzkt.io/KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5/storage/813279)
+[![Contract](https://img.shields.io/badge/Smart_Contract-KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5-3b82f6?style=for-the-badge)](https://tzkt.io/KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5/storage)
+
 ## 🎯 Project Goal
 
 The primary goal of CuratorXTZ is to separate profound conceptual art from superficial trends. The agent specifically looks for pieces within four aesthetic pillars:
