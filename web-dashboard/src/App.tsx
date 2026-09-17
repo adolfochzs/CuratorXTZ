@@ -165,10 +165,20 @@ export default function App() {
 
           {/* ── On-Chain Registry (all pieces combined) ── */}
           <section>
-            <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <span className="text-accent font-mono text-sm">{String(curations.length + 1).padStart(2, '0')}.</span>
-              On-Chain Registry
-            </h2>
+            <div className="mb-6 flex items-center justify-between">
+              <h2 className="text-2xl font-semibold flex items-center gap-2">
+                <span className="text-accent font-mono text-sm">{String(curations.length + 1).padStart(2, '0')}.</span>
+                On-Chain Registry
+              </h2>
+              <a
+                href="https://tzkt.io/KT1Fryv35Bfi38iFjawidq3G1BbUP8XVjJn5/storage/813279"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-mono text-accent hover:text-white transition-colors flex items-center gap-1.5"
+              >
+                Inspect Live BigMap on TzKT ↗
+              </a>
+            </div>
             <div className="glass-panel p-6 overflow-x-auto">
               <table className="w-full text-left font-mono text-sm">
                 <thead>
