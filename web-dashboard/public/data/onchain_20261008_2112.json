@@ -5,8 +5,8 @@
     "network": "mainnet",
     "agent": "tz1hHAz24KsPpSj5HyoUFX5vMkKjhEPtYXL8",
     "stats": {
-      "total": 14,
-      "registered": 14,
+      "total": 13,
+      "registered": 13,
       "errors": 0
     }
   },
@@ -40,36 +40,6 @@
       "onchain_at": "2026-10-09T03:01:25Z",
       "network": "mainnet",
       "display_uri_local": "./data/images/6eaa0297dd1e.jpg"
-    },
-    {
-      "token_id": "3",
-      "name": "cube_machine v3",
-      "creator": "Víctor Arce (@lxtxcx)",
-      "contract": "KT1GxdiZHskUhFDVRQ1YLbXQRuw3JDazJryM",
-      "platform": "cube_machine (2026)",
-      "display_uri": "ipfs://bafybeidbivpsq73khxcbnitwxk52tsmxxniga5hqn3a4yfntfq4t4garse",
-      "mime": "image/gif",
-      "timestamp": "2026-10-09T01:47:07+00:00",
-      "tags": "gif, 3d, glitch, vaporwave, lxtxcx, cube_machine",
-      "features": "N/A",
-      "description": "512*512px, original title: objkt_1.gif",
-      "pass": true,
-      "pass_filter": true,
-      "category": "Glitch Art & Databending",
-      "reason": "The work explicitly identifies as glitch art and utilizes a repetitive, structural aesthetic that aligns with the intentional manipulation of digital data. It avoids the pitfalls of superficial filters by focusing on a specific, iterative machine-based process.",
-      "confidence": 0.85,
-      "f2_score": 7,
-      "f2_category": "Retro Aesthetics",
-      "f2_verdict": "A compelling, high-energy collage that effectively utilizes low-fidelity digital iconography to construct a surreal, rotating object.",
-      "f2_reasoning": "The work successfully employs a 'maximalist' approach to retro digital assets, creating a rhythmic, looping structure that feels like a relic of early internet aesthetics. The deliberate juxtaposition of disparate icons and textures on a rotating cube demonstrates a clear, playful intention to subvert traditional 3D modeling with a raw, lo-fi sensibility.",
-      "f2_recommend_sidecar": true,
-      "human_approved": true,
-      "approved_at": "2026-10-09T02:59:29.797922+00:00",
-      "nft_ref": "KT1GxdiZHskUhFDVRQ1YLbXQRuw3JDazJryM:3",
-      "op_hash": "ooNFWwgEEqYQdWHGbzoGmjuBoxv3Np8gj1BygvZWyuXaJDu1uoz",
-      "onchain_at": "2026-10-09T03:01:55Z",
-      "network": "mainnet",
-      "display_uri_local": "./data/images/562d643a0d11.jpg"
     },
     {
       "token_id": "2",
