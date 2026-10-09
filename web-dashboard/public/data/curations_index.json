@@ -26,11 +26,11 @@
     },
     {
       "id": "curation_04",
-      "name": "04. Onchain",
+      "name": "Onchain",
       "date": "2026-10-08",
       "file": "onchain_20261008_2112.json",
       "pieces": 13,
-      "description": "Curación completa CuratorXTZ — 13 obras activas verificadas on-chain."
+      "description": "Fourth curatorial selection by CuratorXTZ on Mainnet."
     }
   ]
 }
