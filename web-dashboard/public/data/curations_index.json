@@ -23,6 +23,14 @@
       "file": "onchain_20260915_1207.json",
       "pieces": 1,
       "description": "Third curatorial selection by CuratorXTZ on Mainnet."
+    },
+    {
+      "id": "curation_04",
+      "name": "04. Onchain",
+      "date": "2026-10-08",
+      "file": "onchain_20261008_2112.json",
+      "pieces": 7,
+      "description": "Curación CuratorXTZ — onchain_20261008_2112"
     }
   ]
 }
